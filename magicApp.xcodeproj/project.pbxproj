@@ -15,6 +15,9 @@
 		64FC98E1255C3FD500BAC07F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64FC98DF255C3FD500BAC07F /* LaunchScreen.storyboard */; };
 		64FC98EC255C3FD600BAC07F /* magicAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FC98EB255C3FD600BAC07F /* magicAppTests.swift */; };
 		64FC98F7255C3FD600BAC07F /* magicAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FC98F6255C3FD600BAC07F /* magicAppUITests.swift */; };
+		64FC990E255D6F9800BAC07F /* VideoAndTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FC990D255D6F9800BAC07F /* VideoAndTextViewController.swift */; };
+		64FC9913255D707900BAC07F /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FC9912255D707900BAC07F /* VideoViewController.swift */; };
+		64FC996A255D8DE700BAC07F /* bixinho.gif in Resources */ = {isa = PBXBuildFile; fileRef = 64FC9969255D8DE700BAC07F /* bixinho.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		64FC98F2255C3FD600BAC07F /* magicAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = magicAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64FC98F6255C3FD600BAC07F /* magicAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = magicAppUITests.swift; sourceTree = "<group>"; };
 		64FC98F8255C3FD600BAC07F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64FC990D255D6F9800BAC07F /* VideoAndTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoAndTextViewController.swift; sourceTree = "<group>"; };
+		64FC9912255D707900BAC07F /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		64FC9969255D8DE700BAC07F /* bixinho.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bixinho.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +105,9 @@
 		64FC98D3255C3FD100BAC07F /* magicApp */ = {
 			isa = PBXGroup;
 			children = (
-				64FC98D4255C3FD100BAC07F /* AppDelegate.swift */,
-				64FC98D6255C3FD100BAC07F /* SceneDelegate.swift */,
-				64FC98D8255C3FD100BAC07F /* ViewController.swift */,
-				64FC98DA255C3FD100BAC07F /* Main.storyboard */,
-				64FC98DD255C3FD500BAC07F /* Assets.xcassets */,
-				64FC98DF255C3FD500BAC07F /* LaunchScreen.storyboard */,
+				64FC9909255D6E1E00BAC07F /* model */,
+				64FC9908255D6E1300BAC07F /* view */,
+				64FC9907255D6DFC00BAC07F /* controller */,
 				64FC98E2255C3FD500BAC07F /* Info.plist */,
 			);
 			path = magicApp;
@@ -126,6 +129,44 @@
 				64FC98F8255C3FD600BAC07F /* Info.plist */,
 			);
 			path = magicAppUITests;
+			sourceTree = "<group>";
+		};
+		64FC9907255D6DFC00BAC07F /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				64FC98D8255C3FD100BAC07F /* ViewController.swift */,
+				64FC98D4255C3FD100BAC07F /* AppDelegate.swift */,
+				64FC98D6255C3FD100BAC07F /* SceneDelegate.swift */,
+				64FC990D255D6F9800BAC07F /* VideoAndTextViewController.swift */,
+				64FC9912255D707900BAC07F /* VideoViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		64FC9908255D6E1300BAC07F /* view */ = {
+			isa = PBXGroup;
+			children = (
+				64FC9968255D8DD400BAC07F /* gifs */,
+				64FC98DD255C3FD500BAC07F /* Assets.xcassets */,
+				64FC98DF255C3FD500BAC07F /* LaunchScreen.storyboard */,
+				64FC98DA255C3FD100BAC07F /* Main.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		64FC9909255D6E1E00BAC07F /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		64FC9968255D8DD400BAC07F /* gifs */ = {
+			isa = PBXGroup;
+			children = (
+				64FC9969255D8DE700BAC07F /* bixinho.gif */,
+			);
+			path = gifs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64FC996A255D8DE700BAC07F /* bixinho.gif in Resources */,
 				64FC98E1255C3FD500BAC07F /* LaunchScreen.storyboard in Resources */,
 				64FC98DE255C3FD500BAC07F /* Assets.xcassets in Resources */,
 				64FC98DC255C3FD100BAC07F /* Main.storyboard in Resources */,
@@ -260,6 +302,8 @@
 			files = (
 				64FC98D9255C3FD100BAC07F /* ViewController.swift in Sources */,
 				64FC98D5255C3FD100BAC07F /* AppDelegate.swift in Sources */,
+				64FC990E255D6F9800BAC07F /* VideoAndTextViewController.swift in Sources */,
+				64FC9913255D707900BAC07F /* VideoViewController.swift in Sources */,
 				64FC98D7255C3FD100BAC07F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
